@@ -1,0 +1,20 @@
+[build]
+  base_directory = "/"
+  publish = ".next"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+
+[context.production]
+  command = "npm run build"
+  publish = ".next"
+  base_directory = "/"
+
+[context.production.environment]
+  NODE_VERSION = "20"

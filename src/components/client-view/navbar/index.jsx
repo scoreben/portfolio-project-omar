@@ -64,20 +64,20 @@ export default function Navbar(){
     <>
     <header className={`fixed top-0 w-full z-30 bg-white-500 transition-all ${scrollActive ? "shadow-md pt-0" : "pt-4" }`}>
     
-    <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+    <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4 bg-white shadow-sm">
         <div className="col-start-1 col-end-2 flex items-center">
-            <div className="cursor-pointer flex gap-2 font-bold items-center text-[20px] text-green-main">
-
-        <Image
-        src={logo}
-        alt="Logo"
-        layout="responsive"
-        quality={100}
-        height={100}
-        width={120}
-        />
-
-            </div> 
+            <div className="cursor-pointer flex items-center gap-2">
+                <Image
+                    src={logo}
+                    alt="Logo"
+                    layout="fixed"
+                    width={120}
+                    height={120}
+                    quality={100}
+                    className="object-contain"
+                />
+                <span className="font-bold text-xl text-green-main">Omar</span>
+            </div>
         </div> 
     <ul className="hidden lg:flex col-start-4 col-end-8 text-[#000] items-center">
         <CreateMenus
