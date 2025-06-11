@@ -5,6 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  MONGODB_URI = "${MONGODB_URI}"
 
 [[redirects]]
   from = "/*"
@@ -19,3 +20,4 @@
 [context.production.environment]
   NODE_VERSION = "20"
   NEXT_PUBLIC_BASE_PATH = ""
+  MONGODB_URI = "${MONGODB_URI}"

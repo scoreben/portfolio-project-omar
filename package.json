@@ -16,7 +16,7 @@
     "@mui/material": "^6.0.2",
     "bcryptjs": "^2.4.3",
     "framer-motion": "^11.4.0",
-    "mongoose": "^8.6.1",
+    "mongoose": "^7.6.3",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
@@ -25,6 +25,9 @@
     "react-slick": "^0.30.2",
     "sharp": "^0.33.0",
     "caniuse-lite": "^1.0.30001599"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "postcss": "^8",
