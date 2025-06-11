@@ -1,7 +1,7 @@
 [build]
-  base_directory = "/"
-  publish = ".next"
-  command = "npm run build"
+  base = "/"
+  publish = "/.next"
+  command = "npm ci && npm run build"
 
 [build.environment]
   NODE_VERSION = "20"
@@ -12,9 +12,10 @@
   status = 200
 
 [context.production]
-  command = "npm run build"
-  publish = ".next"
-  base_directory = "/"
+  command = "npm ci && npm run build"
+  publish = "/.next"
+  base = "/"
 
 [context.production.environment]
   NODE_VERSION = "20"
+  NEXT_PUBLIC_BASE_PATH = ""
