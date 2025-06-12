@@ -18,6 +18,5 @@
   base = "/"
 
 [context.production.environment]
-  NODE_VERSION = "20"
-  NEXT_PUBLIC_BASE_PATH = ""
+  NODE_VERSION = "18.17.0"
   MONGODB_URI = "${MONGODB_URI}"
