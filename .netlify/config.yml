@@ -1,0 +1,12 @@
+build:
+  command: "npm install --legacy-peer-deps && npm run build"
+  base: "/"
+  publish: "/.next"
+  node_version: "18.17.0"
+  php_version: "none"
+  python_version: "none"
+  ruby_version: "none"
+  go_version: "none"
+
+environment:
+  MONGODB_URI: ${MONGODB_URI}
