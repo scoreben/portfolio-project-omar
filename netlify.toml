@@ -1,10 +1,9 @@
 [build]
   base = "/"
   publish = "/.next"
-  command = "npm install && npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
 
 [build.environment]
-  NODE_VERSION = "18.17.0"
   MONGODB_URI = "${MONGODB_URI}"
 
 [[redirects]]
@@ -13,10 +12,8 @@
   status = 200
 
 [context.production]
-  command = "npm install && npm run build"
   publish = "/.next"
   base = "/"
 
 [context.production.environment]
-  NODE_VERSION = "18.17.0"
   MONGODB_URI = "${MONGODB_URI}"
